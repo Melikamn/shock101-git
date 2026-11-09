@@ -13,7 +13,7 @@ def reply(text: str) -> str:
     if "help" in message:
         return "I can answer simple messages."
 
-    return "Greetings. How may I assist you?"
+    return "Hey! What can I do for you?"
     
 if __name__ == "__main__":
     user_input = input("You: ")
