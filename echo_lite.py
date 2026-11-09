@@ -4,8 +4,8 @@ def reply(text: str) -> str:
     if not message:
         return "Please say something."
 
-    if message in ("hello", "hi", "hey"):
-        return "I am Echo-lite."
+    if message in ("hello", "hi", "hey", "salam", "سلام"):
+        return "Hello! How can I help you?"
 
     if "name" in message:
         return "My name is Echo-lite."
@@ -14,8 +14,7 @@ def reply(text: str) -> str:
         return "I can answer simple messages."
 
     return "I am still learning."
-
-
+    
 if __name__ == "__main__":
     user_input = input("You: ")
     print("Echo:", reply(user_input))
